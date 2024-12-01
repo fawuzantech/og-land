@@ -5,43 +5,43 @@ import { Building2, Shield, Users, Wifi, Coffee, Presentation, ParkingCircle, La
 const facilities = [
   {
     icon: Building2,
-    title: "Training Centers",
-    description: "State-of-the-art training facilities equipped with modern technology and comfortable seating.",
+    title: "Head Office - Nigeria",
+    description: "Located at KM 52/2900 Okereste, our head office spans over 1,250 sq. ft. of workspace, fully equipped for seamless operations.",
+  },
+  {
+    icon: Building2,
+    title: "Regional Office - Ghana",
+    description: "Situated in Kasoa Millennium City Estate, our regional office offers modern infrastructure for local and international projects.",
   },
   {
     icon: Presentation,
-    title: "Conference Rooms",
-    description: "Spacious conference rooms for workshops, seminars, and corporate meetings.",
+    title: "Flexible Project Management",
+    description: "Facilities designed to adapt to diverse project needs, from technical consulting to full-scale engineering teams.",
   },
   {
     icon: Laptop,
-    title: "Computer Labs",
-    description: "Advanced computer laboratories with the latest software and hardware for hands-on training.",
+    title: "Advanced IT Infrastructure",
+    description: "Modern communication systems and computing tools for operational excellence.",
   },
   {
     icon: Wifi,
-    title: "High-Speed Internet",
-    description: "Reliable high-speed internet connectivity throughout our facilities.",
+    title: "High-Speed Connectivity",
+    description: "Reliable internet and communication facilities to support efficient workflows.",
   },
   {
     icon: Coffee,
-    title: "Break Areas",
-    description: "Comfortable break rooms and refreshment areas for relaxation between sessions.",
+    title: "Comfortable Workspaces",
+    description: "Ergonomic furniture and designated break areas for enhanced productivity.",
   },
   {
     icon: Shield,
-    title: "Security",
-    description: "24/7 security monitoring and controlled access to ensure safety.",
+    title: "Secure Environment",
+    description: "24/7 monitored security systems ensuring the safety of staff and assets.",
   },
   {
     icon: ParkingCircle,
-    title: "Parking",
-    description: "Ample parking space available for all visitors and participants.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration Spaces",
-    description: "Open spaces designed for group work and networking.",
+    title: "Accessible Parking",
+    description: "Ample parking spaces available for employees and visitors.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function FacilitiesPage() {
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Our Facilities"
-          subtitle="Modern facilities designed for optimal learning and collaboration"
+          subtitle="State-of-the-art infrastructure for engineering and project management"
           centered
         />
 
@@ -68,19 +68,19 @@ export default function FacilitiesPage() {
         </div>
 
         <div className="bg-gray-50 rounded-lg p-8">
-          <h3 className="text-2xl font-bold mb-6 text-center">Location Benefits</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Why Choose OGLAND Facilities?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <h4 className="font-semibold mb-2">Central Location</h4>
-              <p className="text-gray-600">Easily accessible from major transportation hubs</p>
+              <h4 className="font-semibold mb-2">Centralized Operations</h4>
+              <p className="text-gray-600">Strategically located offices for accessibility and efficiency.</p>
             </div>
             <div className="text-center">
-              <h4 className="font-semibold mb-2">Modern Infrastructure</h4>
-              <p className="text-gray-600">Latest technology and equipment for optimal learning</p>
+              <h4 className="font-semibold mb-2">Technological Excellence</h4>
+              <p className="text-gray-600">Equipped with cutting-edge tools to support complex engineering tasks.</p>
             </div>
             <div className="text-center">
-              <h4 className="font-semibold mb-2">Comfortable Environment</h4>
-              <p className="text-gray-600">Climate-controlled spaces with ergonomic furniture</p>
+              <h4 className="font-semibold mb-2">Optimized Work Environment</h4>
+              <p className="text-gray-600">Comfortable, secure, and collaborative spaces for peak performance.</p>
             </div>
           </div>
         </div>

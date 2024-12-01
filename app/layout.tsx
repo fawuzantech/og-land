@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ProServe - Procurement Training & IT Services',
+  title: 'OGLAND- Procurement Training & IT Services',
   description: 'Professional procurement training, recruitment, and IT services agency.',
 };
 

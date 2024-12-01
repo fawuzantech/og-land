@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <MapPin className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-gray-600">123 Business Ave, Suite 100<br />New York, NY 10001</p>
+                    <p className="text-gray-600"> KM 52/2900 Okereste.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
