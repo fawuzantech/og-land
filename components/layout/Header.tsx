@@ -53,9 +53,6 @@ const Header = () => {
                 <Link href="/equipment">Our Equipment</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/management">Management Team</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
                 <Link href="/project-team">Project Team</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>

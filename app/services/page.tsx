@@ -169,7 +169,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-20 " style={{
+      backgroundImage: `url('/images/display
+      jpg')`, // Fix: Use `url()` to apply the background image
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Our Services"

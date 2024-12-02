@@ -47,7 +47,11 @@ const facilities = [
 
 export default function FacilitiesPage() {
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-20" style={{
+      backgroundImage: `url('/images/facility1.jpg')`, 
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Our Facilities"
