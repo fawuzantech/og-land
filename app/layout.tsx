@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'OGLAND- Procurement Training & IT Services',
-  description: 'Professional procurement training, recruitment, and IT services agency.',
+  description: 'Professional IT Services.',
 };
 
 export default function RootLayout({

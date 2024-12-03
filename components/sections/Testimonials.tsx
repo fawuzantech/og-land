@@ -4,7 +4,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "ProServe's procurement training transformed our operations and improved efficiency by 40%.",
+    quote: "OGLAND's procurement training transformed our operations and improved efficiency by 40%.",
     author: "Sarah Johnson",
     position: "Procurement Director",
     company: "Tech Solutions Inc.",

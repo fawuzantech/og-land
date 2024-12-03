@@ -4,72 +4,21 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
 
 const equipment = {
-  training: [
-    {
-      image: "/images/display.jpg",
-      name: "High-Resolution Displays",
-      description: "27-inch 4K monitors for clear visual presentations",
-      quantity: "30 units",
-    },
-    {
-      image: "/images/decoder.jpg",
-      name: "Decoders",
-      description: "Latest-gen laptops with procurement software",
-      quantity: "25 units",
-    },
-    {
-      image: "/images/cams.jpg",
-      name: "HD CCTV Cameras",
-      description: "4K Cameras for security",
-      quantity: "5 units",
-    },
-    {
-      image: "/images/cam30.jpg",
-      name: "CCTV camera",
-      description: "CCTV Camera",
-      quantity: "20 units",
-    },
-  ],
-  peripherals: [
-    {
-      image: "/images/broadband.jpg",
-      name: "Broadbands",
-      description: "Redundant setup",
-      quantity: "3 units",
-    },
-    {
-      image: "/images/band.jpg",
-      name: "Mobile Wifi",
-      description: "HD webcams for virtual training sessions",
-      quantity: "30 units",
-    },
-    {
-      image: "/images/dish.jpg",
-      name: "Satellite Dish",
-      description: "Professional-grade audio headsets",
-      quantity: "30 units",
-    },
-    {
-      image: "/images/band1.jpg",
-      name: "Internet Connectivity",
-      description: "1Gbps dedicated internet connection",
-      quantity: "Redundant Setup",
-    },
-  ],
+  // ...other equipment categories
   models: [
     {
       name: "Air Compressor",
       model: "Hollman",
       quantity: "2",
       age: "4 years",
-      image: "/images/compressor.jpg", // Unsplash image for Air Compressor
+      image: "/images/compressor_.jpg",
     },
     {
       name: "Jack Hammer",
       model: "Hollman",
       quantity: "T",
       age: "5 fr",
-      image: "/images/jackhammer.jpg", // Unsplash image for Jack Hammer
+      image: "/images/jackham_.jpg",
     },
     {
       name: "Bulldozer D8 R",
@@ -90,21 +39,21 @@ const equipment = {
       model: "IRON",
       quantity: "1820",
       age: "46 months",
-      image: "/images/scaffold.jpg", // Unsplash image for Scaffold Plank
+      image: "/images/scaffoldplank.jpg",
     },
     {
       name: "Crane 60 Tons",
       model: "Amenca",
       quantity: "14",
       age: "10413",
-      image: "/images/crane.jpg", // Unsplash image for Crane
+      image: "/images/crane.jpg",
     },
     {
       name: "Welding Machine",
       model: "Linto",
       description: "Electric welding machine",
       age: "2428",
-      image: "/images/welding.jpg", // Unsplash image for Welding Machine
+      image: "/images/weldingmachine.jpg",
     },
     {
       name: "Drilling Machine",
@@ -112,7 +61,7 @@ const equipment = {
       quantity: "2",
       origin: "German Product",
       age: "ما",
-      image:"/images/drill.jpg", // Unsplash image for Drilling Machine
+      image:"/images/drillingmachine.jpg",
     },
     {
       name: "Cable Tester",
@@ -120,7 +69,7 @@ const equipment = {
       quantity: "4",
       origin: "China",
       age: "3 years",
-      image: "/images/cabletester.jpg", // Unsplash image for Cable Tester
+      image: "/images/cabletester.jpg",
     },
     {
       name: "Cutting Machine",
@@ -128,7 +77,7 @@ const equipment = {
       quantity: "4",
       description: "With Disc",
       age: "673",
-      image: "/images/cuttingmachine.jpg", // Unsplash image for Cutting Machine
+      image: "/images/cuttingmachine.jpg",
     },
   ],
 };
@@ -151,7 +100,7 @@ export default function EquipmentPage() {
   };
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <SectionHeading
           title="Our Equipment"
@@ -172,35 +121,41 @@ export default function EquipmentPage() {
                 <h3 className="text-2xl font-bold mb-8 capitalize text-center">
                   {categories[index]} Equipment
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                {/* Models Section with Flexbox */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                   {categoryItems.map((item, i) => (
-                    <Card key={i}>
-                      <div className="relative h-48">
+                    <Card key={i} className="border border-gray-200 shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                      <div className="relative h-48 w-full"> {/* Fixed height for consistent image sizing */}
                         <img
                           src={item.image}
                           alt={item.name}
-                          className="w-full h-full object-cover rounded-t-lg"
+                          className="absolute inset-0 w-full h-full object-center object-contain bg-white" // Changed to object-contain
                           onError={(e) =>
-                            (e.target.src = "/images/placeholder.jpg") // Fallback image
+                            (e.target.src = "/images/placeholder.jpg")
                           }
                         />
                       </div>
-                      <CardContent className="pt-6">
-                        <h4 className="text-xl font-semibold mb-2">
+                      <CardContent className="p-4 bg-white">
+                        <h4 className="text-lg font-bold mb-2 text-gray-800">
                           {item.name}
                         </h4>
-                        <p className="text-gray-600 mb-4">{item.description}</p>
-                        <div className="bg-gray-50 px-3 py-2 rounded-md mb-4">
-                          <span className="text-sm font-medium">Quantity: </span>
-                          <span className="text-sm text-gray-600">{item.quantity}</span>
+                        <p className="text-sm text-gray-600 mb-3 min-h-[40px]">
+                          {item.description || `Model: ${item.model}`}
+                        </p>
+                        <div className="bg-gray-100 px-3 py-2 rounded-md mb-3 text-sm">
+                          <div className="flex justify-between">
+                            <span className="font-medium text-gray-700">Quantity:</span>
+                            <span className="text-gray-600">{item.quantity || 'N/A'}</span>
+                          </div>
                         </div>
                         <a
-                          href={`https://wa.me/23558110828?text=Hi! I am interested in ${item.name}. Can you provide more details?`}
+                          href={`https://wa.me/233558110828?text=Hi! I am interested in ${item.name}. Can you provide more details?`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-green-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 transition inline-block"
+                          className="w-full text-center bg-green-500 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-green-600 transition-colors"
                         >
-                          Chat on WhatsApp
+                          Inquire on WhatsApp
                         </a>
                       </CardContent>
                     </Card>
@@ -209,32 +164,6 @@ export default function EquipmentPage() {
               </div>
             ))}
           </div>
-          {/* Controls */}
-          <button
-            onClick={handlePrev}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-10"
-          >
-            &#8592;
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-10"
-          >
-            &#8594;
-          </button>
-        </div>
-
-        {/* Indicators */}
-        <div className="flex justify-center space-x-2 mt-6">
-          {categories.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                currentCategory === index ? "bg-primary" : "bg-gray-400"
-              }`}
-              onClick={() => setCurrentCategory(index)}
-            ></button>
-          ))}
         </div>
       </div>
     </div>
