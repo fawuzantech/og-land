@@ -131,9 +131,8 @@ export default function EquipmentPage() {
                           src={item.image}
                           alt={item.name}
                           className="absolute inset-0 w-full h-full object-center object-contain bg-white" // Changed to object-contain
-                          onError={(e) =>
-                            (e.target.src = "/images/placeholder.jpg")
-                          }
+                          
+                          
                         />
                       </div>
                       <CardContent className="p-4 bg-white">
