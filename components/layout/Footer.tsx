@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">OGLAND</h3>
             <p className="text-sm">
-              Your trusted partner in procurement training, recruitment, and IT services.
+              Your trusted partner in building and construction, and IT services.
             </p>
           </div>
           
@@ -54,15 +54,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                123 Business Ave, Suite 100
+                Kasoa Millennium City Estate
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                +1 (555) 123-4567
+                +233 (558)110828
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                contact@proserve.com
+                contact@ogland.com
               </li>
             </ul>
           </div>
