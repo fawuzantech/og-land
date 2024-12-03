@@ -42,6 +42,29 @@ const equipment = {
       image: "/images/scaffoldplank.jpg",
     },
     {
+      name: "Scaffold Tube",
+      model: "IRON",
+      quantity: "1200",
+      age: "6yrs",
+      image: "/images/scaffoldtubes.jpg",
+    },
+
+    {
+      name: "Scaffold Clamps",
+      model: "1RON",
+      quantity: "1,500",
+      age: "6 yrsd",
+      image: "/images/scaffoldclamps.jpg", 
+    },
+    {
+      name: "Wheel Barrow",
+      model: "IRON",
+      quantity: "5,000",
+      age: "6 yrs",
+      image: "/images/wheelbarrow.jpg",
+    },
+    
+    {
       name: "Crane 60 Tons",
       model: "Amenca",
       quantity: "14",
@@ -50,10 +73,19 @@ const equipment = {
     },
     {
       name: "Welding Machine",
-      model: "Linto",
+      model: "Lincoln",
+      quantity: "17",
       description: "Electric welding machine",
-      age: "2428",
+      age: "2yrs",
       image: "/images/weldingmachine.jpg",
+    },
+    {
+      name: "Airless Sprayline with Gun",
+      model: "empire",
+      quantity: "2",
+      description: "pliers available",
+      age: "3yrs",
+      image: "/images/airlesssprayline.jpg",
     },
     {
       name: "Drilling Machine",
@@ -77,7 +109,7 @@ const equipment = {
       quantity: "5",
       description: "pliers available",
       age: "3yrs",
-      image: "/images/screwdrivers_.jpg",
+      image: "/images/pliers.jpg",
     },
     {
       name: "Drilling Bit",
@@ -114,7 +146,24 @@ const equipment = {
       age: "6yrs",
       image: "/images/screwdrivers_.jpg",
     },
+  
+     
+    
+
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   ],
+
 };
 
 export default function EquipmentPage() {

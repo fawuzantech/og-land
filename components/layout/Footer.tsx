@@ -54,7 +54,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                Kasoa Millennium City Estate
+                Kasoa Millennium City Estatenpm run de
+                
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
